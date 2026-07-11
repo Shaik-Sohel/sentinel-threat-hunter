@@ -310,19 +310,12 @@ Created custom Sentinel analytics rules.
 
 ---
 
-## Failed Login Detection
-
-Query:
-
-```kql
+Brute Force Detection
 SecurityEvent
 | where EventID == 4625
-| summarize FailedAttempts=count()
-by Account, Computer, bin(TimeGenerated, 10m)
-| where FailedAttempts > 5
-Detection:
-
-Multiple failed authentication attempts.
+| summarize Attempts=count()
+by IpAddress, Account
+| where Attempts > 10
 
 9. Automated Analytics Rules
 
