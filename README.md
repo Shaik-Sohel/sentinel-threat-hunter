@@ -317,6 +317,8 @@ SecurityEvent
 by IpAddress, Account
 | where Attempts > 10
 
+---
+
 9. Automated Analytics Rules
 
 Configured Sentinel Analytics Rules:
@@ -344,6 +346,8 @@ Failed Login Detection
         |
         |
  Incident Created
+
+ ---
 10. Threat Hunting Activities
 
 Performed proactive threat hunting using KQL.
@@ -366,6 +370,8 @@ SecurityEvent
 | where EventID == 4624
 | summarize count()
 by Account
+
+---
 11. Microsoft Defender Lab
 
 Integrated Microsoft Defender security solutions.
@@ -392,6 +398,9 @@ Incident Investigation
       |
 
 Automated Response
+
+---
+
 12. SOAR Automation Using Logic Apps
 
 Created automated incident response workflows.
@@ -422,6 +431,9 @@ Send Email
           |
 
 Create Jira Ticket
+
+---
+
 13. Automated Email Notification
 
 Configured Logic App email automation.
@@ -454,6 +466,9 @@ Administrator
 
 Action Required:
 Investigate Immediately
+
+---
+
 14. Jira Ticket Automation
 
 Integrated Jira with Sentinel SOAR.
@@ -496,6 +511,8 @@ High
 
 Status:
 Open
+
+---
 
 Author
 
